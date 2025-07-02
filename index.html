@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Sentimiento Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/sentiment"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Análisis de Sentimiento Web con IA</h1>
+        <div id="chatMessages" class="chat-messages">
+            <!-- Los mensajes del chat aparecerán aquí -->
+        </div>
+        <form id="chatForm" class="chat-input-area" autocomplete="off">
+            <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." autocomplete="off" required />
+            <button type="submit" id="sendButton" disabled>Cargando IA...</button>
+        </form>
+        <div id="loadingMessage" class="loading">Cargando modelo de IA... Por favor, espera.</div>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
